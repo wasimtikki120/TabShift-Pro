@@ -1,0 +1,54 @@
+{
+  "name": "TabShift Pro",
+  "version": "1.0.0",
+  "description": "Allows users to rearrange tabs using keyboard shortcuts",
+  "author": "Mohammad Wasim Tikki",
+  "manifest_version": 3,
+  "short_name": "TabShift Pro",
+  "background": {
+    "service_worker": "rearrange.js"
+  },
+  "commands": {
+    "rtl": {
+      "suggested_key": {
+        "default": "Shift+Alt+Left",
+        "windows": "Shift+Alt+Left",
+        "mac": "Command+MacCtrl+Left"
+      },
+      "description": "Move selected tab(s) left"
+    },
+    "rtr": {
+      "suggested_key": {
+        "default": "Shift+Alt+Right",
+        "windows": "Shift+Alt+Right",
+        "mac": "Command+MacCtrl+Right"
+      },
+      "description": "Move selected tab(s) right"
+    },
+    "rtf": {
+      "suggested_key": {
+        "default": "Shift+Alt+Up",
+        "windows": "Shift+Alt+Up",
+        "mac": "Command+MacCtrl+Up"
+      },
+      "description": "Move selected tab(s) to the front"
+    },
+    "rtb": {
+      "suggested_key": {
+        "default": "Shift+Alt+Down",
+        "windows": "Shift+Alt+Down",
+        "mac": "Command+MacCtrl+Down"
+      },
+      "description": "Move selected tab(s) to the back"
+    }
+  },
+  "action": {
+    "default_icon": "icon16.png"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
